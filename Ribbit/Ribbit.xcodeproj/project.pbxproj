@@ -42,6 +42,12 @@
 		D47F6A12186D1C8A00C66990 /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F6A11186D1C8A00C66990 /* EditFriendsViewController.m */; };
 		D47F6A15186D399C00C66990 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F6A14186D399C00C66990 /* FriendsViewController.m */; };
 		D47F6A18186D54AC00C66990 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F6A17186D54AC00C66990 /* CameraViewController.m */; };
+		D47F6A1D186EB21200C66990 /* icon_image.png in Resources */ = {isa = PBXBuildFile; fileRef = D47F6A19186EB21200C66990 /* icon_image.png */; };
+		D47F6A1E186EB21200C66990 /* icon_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D47F6A1A186EB21200C66990 /* icon_image@2x.png */; };
+		D47F6A1F186EB21200C66990 /* icon_video.png in Resources */ = {isa = PBXBuildFile; fileRef = D47F6A1B186EB21200C66990 /* icon_video.png */; };
+		D47F6A20186EB21200C66990 /* icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D47F6A1C186EB21200C66990 /* icon_video@2x.png */; };
+		D47F6A23186EB68700C66990 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F6A22186EB68700C66990 /* ImageViewController.m */; };
+		D47F6A25186EC6EE00C66990 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47F6A24186EC6EE00C66990 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +106,13 @@
 		D47F6A14186D399C00C66990 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 		D47F6A16186D54AC00C66990 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../CameraViewController.h; sourceTree = "<group>"; };
 		D47F6A17186D54AC00C66990 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../CameraViewController.m; sourceTree = "<group>"; };
+		D47F6A19186EB21200C66990 /* icon_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_image.png; sourceTree = "<group>"; };
+		D47F6A1A186EB21200C66990 /* icon_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image@2x.png"; sourceTree = "<group>"; };
+		D47F6A1B186EB21200C66990 /* icon_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_video.png; sourceTree = "<group>"; };
+		D47F6A1C186EB21200C66990 /* icon_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_video@2x.png"; sourceTree = "<group>"; };
+		D47F6A21186EB68700C66990 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = ../ImageViewController.h; sourceTree = "<group>"; };
+		D47F6A22186EB68700C66990 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = ../ImageViewController.m; sourceTree = "<group>"; };
+		D47F6A24186EC6EE00C66990 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D47F6A25186EC6EE00C66990 /* MediaPlayer.framework in Frameworks */,
 				D406758118681CC500577B1F /* AudioToolbox.framework in Frameworks */,
 				D406758218681CC500577B1F /* CFNetwork.framework in Frameworks */,
 				D406758318681CC500577B1F /* CoreLocation.framework in Frameworks */,
@@ -160,6 +174,7 @@
 		D40675281867F00700577B1F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D47F6A24186EC6EE00C66990 /* MediaPlayer.framework */,
 				D406757818681CC500577B1F /* AudioToolbox.framework */,
 				D406757918681CC500577B1F /* CFNetwork.framework */,
 				D406757A18681CC500577B1F /* CoreLocation.framework */,
@@ -185,6 +200,8 @@
 				D40675391867F00700577B1F /* JCAppDelegate.m */,
 				D47F6A16186D54AC00C66990 /* CameraViewController.h */,
 				D47F6A17186D54AC00C66990 /* CameraViewController.m */,
+				D47F6A21186EB68700C66990 /* ImageViewController.h */,
+				D47F6A22186EB68700C66990 /* ImageViewController.m */,
 				D40675731868129000577B1F /* InboxViewController.h */,
 				D40675741868129000577B1F /* InboxViewController.m */,
 				D47F6A10186D1C8A00C66990 /* EditFriendsViewController.h */,
@@ -233,6 +250,10 @@
 		D40675721867FD3D00577B1F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D47F6A19186EB21200C66990 /* icon_image.png */,
+				D47F6A1A186EB21200C66990 /* icon_image@2x.png */,
+				D47F6A1B186EB21200C66990 /* icon_video.png */,
+				D47F6A1C186EB21200C66990 /* icon_video@2x.png */,
 				D40675661867FD1B00577B1F /* camera.png */,
 				D40675671867FD1B00577B1F /* friends.png */,
 				D40675681867FD1B00577B1F /* inbox.png */,
@@ -319,15 +340,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D47F6A1F186EB21200C66990 /* icon_video.png in Resources */,
 				D40675591867F1FC00577B1F /* MainStoryboard.storyboard in Resources */,
 				D40675341867F00700577B1F /* InfoPlist.strings in Resources */,
+				D47F6A1D186EB21200C66990 /* icon_image.png in Resources */,
 				D406756E1867FD1B00577B1F /* inbox.png in Resources */,
 				D406756D1867FD1B00577B1F /* friends.png in Resources */,
 				D406756F1867FD1B00577B1F /* camera@2x.png in Resources */,
 				D406756C1867FD1B00577B1F /* camera.png in Resources */,
+				D47F6A1E186EB21200C66990 /* icon_image@2x.png in Resources */,
 				D40675701867FD1B00577B1F /* friends@2x.png in Resources */,
 				D406753C1867F00700577B1F /* Images.xcassets in Resources */,
 				D40675711867FD1B00577B1F /* inbox@2x.png in Resources */,
+				D47F6A20186EB21200C66990 /* icon_video@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +377,7 @@
 				D47F6A15186D399C00C66990 /* FriendsViewController.m in Sources */,
 				D406753A1867F00700577B1F /* JCAppDelegate.m in Sources */,
 				D40675751868129000577B1F /* InboxViewController.m in Sources */,
+				D47F6A23186EB68700C66990 /* ImageViewController.m in Sources */,
 				D47F6A12186D1C8A00C66990 /* EditFriendsViewController.m in Sources */,
 				D406758F1868211400577B1F /* SignupViewController.m in Sources */,
 			);

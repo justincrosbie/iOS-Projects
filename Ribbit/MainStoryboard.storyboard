@@ -8,6 +8,21 @@
         <scene sceneID="PQ3-nq-d81">
             <objects>
                 <viewController id="Yka-UZ-MdP" customClass="InboxViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Kgy-ch-4bp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="dnV-uu-cDd">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dnV-uu-cDd" id="oTI-xp-OVl">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
                     <navigationItem key="navigationItem" id="m00-ej-EQU">
                         <barButtonItem key="rightBarButtonItem" title="Signout" id="Eia-CP-dgO">
                             <connections>
@@ -17,6 +32,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="O5Y-m9-SCr" kind="push" identifier="showSignIn" id="PmB-LD-Ct4"/>
+                        <segue destination="sof-kz-EfP" kind="push" identifier="showImage" id="bgk-gD-9Bs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GsT-iV-BRJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -160,6 +176,34 @@
             </objects>
             <point key="canvasLocation" x="1691" y="-232"/>
         </scene>
+        <!--Image View Controller-->
+        <scene sceneID="ZHt-x1-sdr">
+            <objects>
+                <viewController id="sof-kz-EfP" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yX7-zS-oEH"/>
+                        <viewControllerLayoutGuide type="bottom" id="VXf-pv-9Ff"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fPo-Dy-Lw8">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hop-oW-PKs">
+                                <rect key="frame" x="-9" y="8" width="344" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7cp-Ut-Sl7"/>
+                    <connections>
+                        <outlet property="imageView" destination="hop-oW-PKs" id="ayW-gN-npR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wgd-u2-rrB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="-823"/>
+        </scene>
         <!--Navigation Controller - Inbox-->
         <scene sceneID="hLj-wM-hJT">
             <objects>
@@ -172,7 +216,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Yka-UZ-MdP" kind="relationship" relationship="rootViewController" id="15w-d4-0NZ"/>
+                        <segue destination="Yka-UZ-MdP" kind="relationship" relationship="rootViewController" id="pon-yr-IrF"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSL-l3-w1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -233,7 +277,7 @@
             </objects>
             <point key="canvasLocation" x="716" y="419"/>
         </scene>
-        <!--Camera View Controller-->
+        <!--Camera View Controller - Recipients-->
         <scene sceneID="e42-AU-zO2">
             <objects>
                 <tableViewController id="oBy-h6-Kcb" customClass="CameraViewController" sceneMemberID="viewController">
@@ -242,7 +286,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="WL3-T8-w5O">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="WL3-T8-w5O">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WL3-T8-w5O" id="y71-MI-CeO">
@@ -256,7 +300,18 @@
                             <outlet property="delegate" destination="oBy-h6-Kcb" id="q80-v5-Uox"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="ENC-wj-FYi"/>
+                    <navigationItem key="navigationItem" title="Recipients" id="ENC-wj-FYi">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="sRp-hg-bS0">
+                            <connections>
+                                <action selector="cancel:" destination="oBy-h6-Kcb" id="rkV-ak-J9I"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Send" id="4ww-R8-LEU">
+                            <connections>
+                                <action selector="send:" destination="oBy-h6-Kcb" id="3fL-4V-IkH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h66-K3-dAW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
