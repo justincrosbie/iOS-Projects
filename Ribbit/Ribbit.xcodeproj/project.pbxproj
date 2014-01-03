@@ -20,12 +20,6 @@
 		D406754D1867F00700577B1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D406754B1867F00700577B1F /* InfoPlist.strings */; };
 		D406754F1867F00700577B1F /* RibbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D406754E1867F00700577B1F /* RibbitTests.m */; };
 		D40675591867F1FC00577B1F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40675581867F1FC00577B1F /* MainStoryboard.storyboard */; };
-		D406756C1867FD1B00577B1F /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = D40675661867FD1B00577B1F /* camera.png */; };
-		D406756D1867FD1B00577B1F /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = D40675671867FD1B00577B1F /* friends.png */; };
-		D406756E1867FD1B00577B1F /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = D40675681867FD1B00577B1F /* inbox.png */; };
-		D406756F1867FD1B00577B1F /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D40675691867FD1B00577B1F /* camera@2x.png */; };
-		D40675701867FD1B00577B1F /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D406756A1867FD1B00577B1F /* friends@2x.png */; };
-		D40675711867FD1B00577B1F /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D406756B1867FD1B00577B1F /* inbox@2x.png */; };
 		D40675751868129000577B1F /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D40675741868129000577B1F /* InboxViewController.m */; };
 		D406757718681C5500577B1F /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D406757618681C5500577B1F /* Parse.framework */; };
 		D406758118681CC500577B1F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D406757818681CC500577B1F /* AudioToolbox.framework */; };
@@ -39,15 +33,15 @@
 		D406758918681CC500577B1F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D406758018681CC500577B1F /* SystemConfiguration.framework */; };
 		D406758C1868210800577B1F /* SigninViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D406758B1868210800577B1F /* SigninViewController.m */; };
 		D406758F1868211400577B1F /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D406758E1868211400577B1F /* SignupViewController.m */; };
+		D42D8B621874EEF30066183E /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D42D8B601874EEF30066183E /* TPKeyboardAvoidingScrollView.m */; };
 		D47F6A12186D1C8A00C66990 /* EditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F6A11186D1C8A00C66990 /* EditFriendsViewController.m */; };
 		D47F6A15186D399C00C66990 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F6A14186D399C00C66990 /* FriendsViewController.m */; };
 		D47F6A18186D54AC00C66990 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F6A17186D54AC00C66990 /* CameraViewController.m */; };
-		D47F6A1D186EB21200C66990 /* icon_image.png in Resources */ = {isa = PBXBuildFile; fileRef = D47F6A19186EB21200C66990 /* icon_image.png */; };
-		D47F6A1E186EB21200C66990 /* icon_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D47F6A1A186EB21200C66990 /* icon_image@2x.png */; };
-		D47F6A1F186EB21200C66990 /* icon_video.png in Resources */ = {isa = PBXBuildFile; fileRef = D47F6A1B186EB21200C66990 /* icon_video.png */; };
-		D47F6A20186EB21200C66990 /* icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D47F6A1C186EB21200C66990 /* icon_video@2x.png */; };
 		D47F6A23186EB68700C66990 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D47F6A22186EB68700C66990 /* ImageViewController.m */; };
 		D47F6A25186EC6EE00C66990 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D47F6A24186EC6EE00C66990 /* MediaPlayer.framework */; };
+		D4FAAA381876499C009D0EED /* MSCellAccessory.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FAAA351876499C009D0EED /* MSCellAccessory.m */; };
+		D4FAAA391876499C009D0EED /* UIView+AccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FAAA371876499C009D0EED /* UIView+AccessViewController.m */; };
+		D4FAAA3C18769183009D0EED /* GravatarUrlBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D4FAAA3A18769183009D0EED /* GravatarUrlBuilder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,12 +72,6 @@
 		D406754C1867F00700577B1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D406754E1867F00700577B1F /* RibbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RibbitTests.m; sourceTree = "<group>"; };
 		D40675581867F1FC00577B1F /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		D40675661867FD1B00577B1F /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
-		D40675671867FD1B00577B1F /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friends.png; sourceTree = "<group>"; };
-		D40675681867FD1B00577B1F /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
-		D40675691867FD1B00577B1F /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
-		D406756A1867FD1B00577B1F /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friends@2x.png"; sourceTree = "<group>"; };
-		D406756B1867FD1B00577B1F /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
 		D40675731868129000577B1F /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
 		D40675741868129000577B1F /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
 		D406757618681C5500577B1F /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
@@ -100,19 +88,23 @@
 		D406758B1868210800577B1F /* SigninViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SigninViewController.m; sourceTree = "<group>"; };
 		D406758D1868211400577B1F /* SignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
 		D406758E1868211400577B1F /* SignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		D42D8B601874EEF30066183E /* TPKeyboardAvoidingScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPKeyboardAvoidingScrollView.m; sourceTree = "<group>"; };
+		D42D8B611874EEF30066183E /* TPKeyboardAvoidingScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPKeyboardAvoidingScrollView.h; sourceTree = "<group>"; };
 		D47F6A10186D1C8A00C66990 /* EditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditFriendsViewController.h; sourceTree = "<group>"; };
 		D47F6A11186D1C8A00C66990 /* EditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditFriendsViewController.m; sourceTree = "<group>"; };
 		D47F6A13186D399C00C66990 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsViewController.h; sourceTree = "<group>"; };
 		D47F6A14186D399C00C66990 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsViewController.m; sourceTree = "<group>"; };
 		D47F6A16186D54AC00C66990 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CameraViewController.h; path = ../CameraViewController.h; sourceTree = "<group>"; };
 		D47F6A17186D54AC00C66990 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CameraViewController.m; path = ../CameraViewController.m; sourceTree = "<group>"; };
-		D47F6A19186EB21200C66990 /* icon_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_image.png; sourceTree = "<group>"; };
-		D47F6A1A186EB21200C66990 /* icon_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image@2x.png"; sourceTree = "<group>"; };
-		D47F6A1B186EB21200C66990 /* icon_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_video.png; sourceTree = "<group>"; };
-		D47F6A1C186EB21200C66990 /* icon_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_video@2x.png"; sourceTree = "<group>"; };
 		D47F6A21186EB68700C66990 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageViewController.h; path = ../ImageViewController.h; sourceTree = "<group>"; };
 		D47F6A22186EB68700C66990 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageViewController.m; path = ../ImageViewController.m; sourceTree = "<group>"; };
 		D47F6A24186EC6EE00C66990 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		D4FAAA341876499C009D0EED /* MSCellAccessory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCellAccessory.h; sourceTree = "<group>"; };
+		D4FAAA351876499C009D0EED /* MSCellAccessory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCellAccessory.m; sourceTree = "<group>"; };
+		D4FAAA361876499C009D0EED /* UIView+AccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AccessViewController.h"; sourceTree = "<group>"; };
+		D4FAAA371876499C009D0EED /* UIView+AccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AccessViewController.m"; sourceTree = "<group>"; };
+		D4FAAA3A18769183009D0EED /* GravatarUrlBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravatarUrlBuilder.m; sourceTree = "<group>"; };
+		D4FAAA3B18769183009D0EED /* GravatarUrlBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravatarUrlBuilder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +188,9 @@
 		D406752F1867F00700577B1F /* Ribbit */ = {
 			isa = PBXGroup;
 			children = (
+				D4FAAA3A18769183009D0EED /* GravatarUrlBuilder.m */,
+				D4FAAA3B18769183009D0EED /* GravatarUrlBuilder.h */,
+				D4FAAA331876499C009D0EED /* MSCellAccessory */,
 				D40675381867F00700577B1F /* JCAppDelegate.h */,
 				D40675391867F00700577B1F /* JCAppDelegate.m */,
 				D47F6A16186D54AC00C66990 /* CameraViewController.h */,
@@ -212,6 +207,8 @@
 				D406758B1868210800577B1F /* SigninViewController.m */,
 				D406758D1868211400577B1F /* SignupViewController.h */,
 				D406758E1868211400577B1F /* SignupViewController.m */,
+				D42D8B601874EEF30066183E /* TPKeyboardAvoidingScrollView.m */,
+				D42D8B611874EEF30066183E /* TPKeyboardAvoidingScrollView.h */,
 				D406753B1867F00700577B1F /* Images.xcassets */,
 				D40675301867F00700577B1F /* Supporting Files */,
 			);
@@ -250,18 +247,19 @@
 		D40675721867FD3D00577B1F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				D47F6A19186EB21200C66990 /* icon_image.png */,
-				D47F6A1A186EB21200C66990 /* icon_image@2x.png */,
-				D47F6A1B186EB21200C66990 /* icon_video.png */,
-				D47F6A1C186EB21200C66990 /* icon_video@2x.png */,
-				D40675661867FD1B00577B1F /* camera.png */,
-				D40675671867FD1B00577B1F /* friends.png */,
-				D40675681867FD1B00577B1F /* inbox.png */,
-				D40675691867FD1B00577B1F /* camera@2x.png */,
-				D406756A1867FD1B00577B1F /* friends@2x.png */,
-				D406756B1867FD1B00577B1F /* inbox@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		D4FAAA331876499C009D0EED /* MSCellAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				D4FAAA341876499C009D0EED /* MSCellAccessory.h */,
+				D4FAAA351876499C009D0EED /* MSCellAccessory.m */,
+				D4FAAA361876499C009D0EED /* UIView+AccessViewController.h */,
+				D4FAAA371876499C009D0EED /* UIView+AccessViewController.m */,
+			);
+			path = MSCellAccessory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,19 +338,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D47F6A1F186EB21200C66990 /* icon_video.png in Resources */,
 				D40675591867F1FC00577B1F /* MainStoryboard.storyboard in Resources */,
 				D40675341867F00700577B1F /* InfoPlist.strings in Resources */,
-				D47F6A1D186EB21200C66990 /* icon_image.png in Resources */,
-				D406756E1867FD1B00577B1F /* inbox.png in Resources */,
-				D406756D1867FD1B00577B1F /* friends.png in Resources */,
-				D406756F1867FD1B00577B1F /* camera@2x.png in Resources */,
-				D406756C1867FD1B00577B1F /* camera.png in Resources */,
-				D47F6A1E186EB21200C66990 /* icon_image@2x.png in Resources */,
-				D40675701867FD1B00577B1F /* friends@2x.png in Resources */,
 				D406753C1867F00700577B1F /* Images.xcassets in Resources */,
-				D40675711867FD1B00577B1F /* inbox@2x.png in Resources */,
-				D47F6A20186EB21200C66990 /* icon_video@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,12 +360,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D406758C1868210800577B1F /* SigninViewController.m in Sources */,
+				D42D8B621874EEF30066183E /* TPKeyboardAvoidingScrollView.m in Sources */,
 				D47F6A18186D54AC00C66990 /* CameraViewController.m in Sources */,
 				D40675361867F00700577B1F /* main.m in Sources */,
+				D4FAAA3C18769183009D0EED /* GravatarUrlBuilder.m in Sources */,
 				D47F6A15186D399C00C66990 /* FriendsViewController.m in Sources */,
 				D406753A1867F00700577B1F /* JCAppDelegate.m in Sources */,
+				D4FAAA381876499C009D0EED /* MSCellAccessory.m in Sources */,
 				D40675751868129000577B1F /* InboxViewController.m in Sources */,
 				D47F6A23186EB68700C66990 /* ImageViewController.m in Sources */,
+				D4FAAA391876499C009D0EED /* UIView+AccessViewController.m in Sources */,
 				D47F6A12186D1C8A00C66990 /* EditFriendsViewController.m in Sources */,
 				D406758F1868211400577B1F /* SignupViewController.m in Sources */,
 			);
@@ -496,8 +488,8 @@
 		D40675531867F00700577B1F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/justincrosbie/dev/ios/teamtreehouse/Ribbit,
@@ -513,8 +505,8 @@
 		D40675541867F00700577B1F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/justincrosbie/dev/ios/teamtreehouse/Ribbit,

@@ -18,7 +18,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	self.navigationItem.hidesBackButton = YES;
+    
+    if ( [UIScreen mainScreen].bounds.size.height == 568 ) {
+        self.backgroundImageView.image = [UIImage imageNamed:@"loginBackground-568h"];
+    }
+    
+    self.usernameField.delegate = self;
+    self.passwordField.delegate = self;
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    [self.navigationController.navigationBar setHidden:YES];
 }
 
 - (IBAction)signin:(id)sender {
@@ -52,6 +64,14 @@
                                         }];
     }
     
+}
+
+#pragma mark - UITExtFieldDelegate
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    
+    return YES;
 }
 
 @end

@@ -18,6 +18,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+
+    if ( [UIScreen mainScreen].bounds.size.height == 568 ) {
+        self.backgroundImageView.image = [UIImage imageNamed:@"loginBackground-568h"];
+    }
+
+    self.usernameField.delegate = self;
+    self.passwordField.delegate = self;
+    self.emailField.delegate = self;
 }
 
 - (IBAction)signup:(id)sender {
@@ -51,4 +59,17 @@
     }
     
 }
+
+- (IBAction)dismiss:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+#pragma mark - UITExtFieldDelegate
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
 @end

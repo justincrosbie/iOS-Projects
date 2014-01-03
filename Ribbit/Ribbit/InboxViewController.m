@@ -8,6 +8,7 @@
 
 #import "InboxViewController.h"
 #import "ImageViewController.h"
+#import "MSCellAccessory.h"
 
 @interface InboxViewController ()
 
@@ -25,15 +26,16 @@
     if ( !currentUser ) {
         [self performSegueWithIdentifier:@"showSignIn" sender:self];
     }
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(retrieveMessages) forControlEvents:UIControlEventValueChanged];
 }
 
--(void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
+- (void)retrieveMessages {
     PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
     [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser] objectId]];
     [query orderByAscending:@"createdAt"];
-
+    
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if ( error ) {
             NSLog(@"Error: %@ %@", error, [error userInfo]);
@@ -42,7 +44,19 @@
             NSLog(@"Number of messages = %d", [self.messages count]);
             [self.tableView reloadData];
         }
+        
+        if ( [self.refreshControl isRefreshing] ) {
+            [self.refreshControl endRefreshing];
+        }
     }];
+}
+
+-(void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+    [self.navigationController.navigationBar setHidden:NO];
+   
+    [self retrieveMessages];
 }
 
 #pragma mark - Table view data source
@@ -67,6 +81,10 @@
     // Configure the cell...
     PFObject *message = [self.messages objectAtIndex:indexPath.row];
     cell.textLabel.text = [message objectForKey:@"senderName"];
+    
+    UIColor *disclosureColor = [UIColor colorWithRed:0.553 green:0.439 blue:0.718 alpha:1.0];
+    
+    cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_DISCLOSURE_INDICATOR color:disclosureColor];
     
     NSString *fileType = [message objectForKey:@"fileType"];
     if ( fileType == Nil ) {

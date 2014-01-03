@@ -18,6 +18,8 @@
     
     [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
+    [self customizeUserInterface];
+    
     return YES;
 }
 
@@ -46,6 +48,36 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - User Interface
+
+-(void) customizeUserInterface {
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navBarBackground"] forBarMetrics:UIBarMetricsDefault];
+    
+    NSDictionary *atts = [NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], NSForegroundColorAttributeName, nil];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:atts];
+    
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor redColor]];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    [[UITabBarItem appearance] setTitleTextAttributes:atts forState:UIControlStateNormal];
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    UITabBar *tabBar = tabBarController.tabBar;
+    
+    
+    
+    UITabBarItem *tabBarInbox = [tabBar.items objectAtIndex:0];
+    UITabBarItem *tabBarFriends = [tabBar.items objectAtIndex:1];
+    UITabBarItem *tabBarCamera = [tabBar.items objectAtIndex:2];
+    
+    [tabBarInbox setFinishedSelectedImage:[UIImage imageNamed:@"inbox"] withFinishedUnselectedImage:[UIImage imageNamed:@"inbox"]];
+    [tabBarFriends setFinishedSelectedImage:[UIImage imageNamed:@"friends"] withFinishedUnselectedImage:[UIImage imageNamed:@"friends"]];
+    [tabBarCamera setFinishedSelectedImage:[UIImage imageNamed:@"camera"] withFinishedUnselectedImage:[UIImage imageNamed:@"camera"]];
+    
 }
 
 @end
